@@ -9,5 +9,7 @@
 {% endblock extra_css %}
 
 {% block content %}
+    {% include "_header.html" with subtitle="a subtitle" %}
     {{ page.warn_text|richtext }}
+    {% include "_footer.html" %}
 {% endblock content %}

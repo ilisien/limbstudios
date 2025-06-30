@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+:root {
+    --light-red: #ff5f42;
+    --light-green: #3bff72;
+    --dark-sky: #30cfff;
+    --sky: #bdf0ff;
+    --yikes-yellow: #ffc830;
+
+    --gray-0:  #000000; /* black */
+    --gray-1:  #1a1a1a;
+    --gray-2:  #333333;
+    --gray-3:  #4d4d4d;
+    --gray-4:  #666666;
+    --gray-5:  #808080; /* mid gray */
+    --gray-6:  #999999;
+    --gray-7:  #b3b3b3;
+    --gray-8:  #cccccc;
+    --gray-9:  #e6e6e6;
+    --gray-10: #ffffff; /* white */
+
+    --parchment-0:  #3a2e20;  /* deep brown, for aged edges or texture */
+    --parchment-1:  #5a4633;
+    --parchment-2:  #7c6547;
+    --parchment-3:  #a1835b;
+    --parchment-4:  #c8a977;
+    --parchment-5:  #e1cda5;  /* base parchment tone */
+    --parchment-6:  #f0e3c2;
+    --parchment-7:  #f8efda;
+    --parchment-8:  #fdfaf2;
+    --parchment-9:  #fffdf9;  /* nearly white, with warmth */
+
+    --primary-bkg: var(--parchment-9);
+    --primary-text: var(--gray-1);
+
+    --secondary-bkg: var(--sky);
+    --secondary-text: var(--gray-1);
+
+    --tertiary-bkg: var(--parchment-1);
+    --tertiary-text: var(--parchment-6);
+
+    --info: var(--dark-sky);
+    --info-text: var(--gray-10);
+    --warning: var(--yikes-yellow);
+    --warning-text: var(--gray-10);
+    --success: var(--light-green);
+    --success-text: var(--gray-10);
+    --error: var(--light-red);
+    --error-text: var(--gray-10);
+}
+
+body {
+    overflow: hidden;
+}
+
+.header_wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 20vh;
+    background-color: var(--primary-bkg);
+    color: var(--primary-text);
+    align-items: center;
+    justify-content: center;
+}
+
+.footer_wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 20vh;
+    background-color: var(--tertiary-bkg);
+    color: var(--tertiary-text);
+    align-items: center;
+    justify-content: center;
+}
