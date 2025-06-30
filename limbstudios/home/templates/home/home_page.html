@@ -10,6 +10,10 @@
 
 {% block content %}
     {% include "_header.html" with subtitle="a subtitle" %}
-    {{ page.warn_text|richtext }}
+    <div class="content_wrapper">
+        {% if page.warn_text %}
+        <div class="warning_text_box">{{ page.warn_text|richtext }}</div>
+        {% endif %}
+    </div>
     {% include "_footer.html" %}
 {% endblock content %}
