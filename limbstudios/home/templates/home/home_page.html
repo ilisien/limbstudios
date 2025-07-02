@@ -12,15 +12,15 @@
     {% include "_header.html" with subtitle="a subtitle" %}
     <div class="content_wrapper">
         {% if page.err_text %}
-        <div class="error_text_box">{{ page.err_text|richtext }}</div>
+        <div class="error message_text_box">{{ page.err_text|richtext }}</div>
         {% endif %}
 
         {% if page.warn_text %}
-        <div class="warning_text_box">{{ page.warn_text|richtext }}</div>
+        <div class="warning message_text_box">{{ page.warn_text|richtext }}</div>
         {% endif %}
-        
+
         {% if page.info_text %}
-        <div class="info_text_box">{{ page.info_text|richtext }}</div>
+        <div class="info message_text_box">{{ page.info_text|richtext }}</div>
         {% endif %}
     </div>
     {% include "_footer.html" %}

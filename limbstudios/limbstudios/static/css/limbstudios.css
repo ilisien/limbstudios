@@ -125,16 +125,12 @@ body {
     background-color: var(--content-bkg);
     color: var(--content-text);
     align-items: stretch;
-    justify-content: space-between;
+    justify-content: start;
     box-sizing: border-box;
     padding: 20px;
 }
 
-/* error text here */
-
-.warning_text_box {
-    background-color: var(--warning);
-    color: var(--warning-text);
+.message_text_box {
     border-color: var(--gray-10);
     border-style: solid;
     border-width: 4px;
@@ -143,11 +139,41 @@ body {
     transition-duration: 0.25s;
 }
 
-.warning_text_box:hover {
-    background-color: var(--warning-secondary);
+.message_text_box:hover {
     border-width: 2px;
-    padding: 12px;
+    padding: 10px;
     transition-duration: 0.25s;
 }
 
-/* info text here */
+.error {
+    background-color: var(--error);
+    color: var(--error-text);
+    transition-duration: 0.25s;
+}
+
+.error:hover {
+    background-color: var(--error-secondary);
+    transition-duration: 0.25s;
+}
+
+.warning {
+    background-color: var(--warning);
+    color: var(--warning-text);
+    transition-duration: 0.25s;
+}
+
+.warning:hover {
+    background-color: var(--warning-secondary);
+    transition-duration: 0.25s;
+}
+
+.info {
+    background-color: var(--info);
+    color: var(--info-text);
+    transition-duration: 0.25s;
+}
+
+.info:hover {
+    background-color: var(--info-secondary);
+    transition-duration: 0.25s;
+}
